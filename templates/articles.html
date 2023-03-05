@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+</head>
+<style type="text/css">
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+<body>
+
+<h1 style="font-family:Verdana, sans-serif">Articles</h1>
+
+<ul style="list-style-type:none; padding:0; font-family:Verdana, sans-serif; font-size:70%" >
+    {% for article in articles %}
+    <li><a href="article/{{ article[0] }}">{{ article[1] }}</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
